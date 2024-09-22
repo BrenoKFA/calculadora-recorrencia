@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Equações de Recorrência</title>
+    <link rel="shortcut icon" href="caminhodoarquivo/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <script src="discreta.js"></script>
+    <script type="text/javascript">
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="header"><span class="color">&lt;p&gt;</span>Calculadora de Equações de Recorrência<span class="color">&lt;/p&gt;</span></div>
+        <div id="valores">
+            <div class="var">a = <input type="text" class="v1" placeholder="" /></div> 
+            <div class="var">b = <input type="text" class="v2" placeholder="" /></div> 
+            <div class="var">c = <input type="text" class="v3" placeholder="" /></div> 
+        </div>
+        <div id="equacao"></div>
+        <button id="enviar" onclick="user_click()">FINALIZAR</button>
+        <div id="resposta"></div>
+    </div>
+</body>
+</html>

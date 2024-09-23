@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let b = bInput.value;
     let c = cInput.value;
     
-    document.querySelector("#equacao").innerHTML = `${a}\\lambda_{n+2} + ${b}\\lambda_{n+1} + ${c}\\lambda_{n} = 0`;
+    document.querySelector("#equacao").innerHTML = `$$${a}\\lambda_{n+2} + ${b}\\lambda_{n+1} + ${c}\\lambda_{n} = 0$$`;
+    MathJax.typeset();
   };
 
   aInput.addEventListener("input", atualizarEquacao);
@@ -70,7 +71,9 @@ function user_click() {
   let c = parseFloat(document.querySelector(".v3").value)
 
   let res = second_order_solver(a, b, c)
-  document.querySelector("#resposta").innerHTML = res
+  document.querySelector("#resposta").innerHTML = `$$${res}$$`
+
+  MathJax.typeset();
 }
 
 // Resolve equações da forma: a*f(n) = b*f(n-1) + c*f(n-2) => a*f(n) - b*f(n-1) - c*f(n-2) = 0

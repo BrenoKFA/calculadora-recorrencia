@@ -82,12 +82,12 @@ body {
 }
 
 #equacao {
-    margin: 30px;
+    margin: 15px;
 }
 
 #enviar {
     width: 200px;
-    margin: 10px 30px 15px 30px;
+    margin: 0px 30px 0px 30px;
     padding: 15px;
     transition-duration: 0.6s;
     border-radius: 10px;
@@ -103,5 +103,5 @@ body {
 }
 
 #resposta {
-    margin: 20px;
+    margin: 15px;
 }
